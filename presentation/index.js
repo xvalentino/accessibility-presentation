@@ -22,10 +22,10 @@ const images = {
 // not feeling these colors
 const theme = createTheme(
   {
-    primary: '#433E43',
-    secondary: '#CCBDB2',
-    tertiary: '#8E7F8A',
-    quaternary: '#715A69'
+    primary: '#553c8b',
+    secondary: '#9ea9f0',
+    tertiary: '#ccc1ff',
+    quaternary: '#ffeafe'
   },
   {
     primary: 'Operator Mono Lig', // This font is a little distracting
@@ -118,8 +118,14 @@ const Presentation = () => (
         </ListItem>
       </List>
     </Slide>
+
     <Slide transition={['zoom']} bgColor="primary">
       <Image src={images.differentTypesOfDisabilities} />
+    </Slide>
+    <Slide>
+      <Heading>How does it help?</Heading>
+      <Text>Example: Captions</Text>
+      <Text>Captions can accomodate those who cannot hear at all, as well as those in a quiet or loud place.</Text>
     </Slide>
     <Slide transition={['zoom']} bgColor="primary">
       <iframe
@@ -153,14 +159,20 @@ const Presentation = () => (
     <Slide>
       <Heading>Questions?</Heading>
     </Slide>
-    {/* - https://www.w3.org/WAI/fundamentals/accessibility-intro/#what */}
+    <Slide>
+      <Heading>Sources</Heading>
+      <List>
+        <ListItem>
+          Web Accessibility Initiative (WAI),
+          www.w3.org/WAI/fundamentals/accessibility-intro/#what.
+        </ListItem>
+        <ListItem>
+          Microsoft Inclusive Design,
+          https://www.microsoft.com/design/inclusive/
+        </ListItem>
+      </List>
+    </Slide>
     {/* - Accessibility can enhance your brand, drive innovation, and extend your market reach.  Web accessibility is required by law in many situations. */}
-    {/* - The W3C Web Accessibility Initiative (WAI) develops standards and support materials to help you understand and implement accessibility. */}
-    {/* - - https://www.w3.org/WAI/ */}
-    {/* - What can you do?
-        check out some videos/poke around on w3.org
-        consider the experience of users with disabilities while you do your job
-        */}
   </Deck>
 );
 export default Presentation;
