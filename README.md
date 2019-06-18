@@ -1,6 +1,6 @@
-[![Maintenance Status][maintenance-image]](#maintenance-status)
+# Accessibility 101
 
-# Spectacle Boilerplate
+This is a presentation to introduce anyone to accessibility. Follow an outline described by [WCAG teach advocate presentation outlines](https://www.w3.org/WAI/teach-advocate/accessibility-training/presentation-outlines/)
 
 ## Contents
 
@@ -59,6 +59,6 @@ yarn deploy
 
 ## Maintenance Status
 
-**Active:** Formidable is actively working on this project, and we expect to continue for work for the foreseeable future. Bug reports, feature requests and pull requests are welcome. 
+**Active:** Formidable is actively working on this project, and we expect to continue for work for the foreseeable future. Bug reports, feature requests and pull requests are welcome.
 
 [maintenance-image]: https://img.shields.io/badge/maintenance-active-green.svg
