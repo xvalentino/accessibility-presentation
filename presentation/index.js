@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Link,
   BlockQuote,
@@ -11,54 +11,54 @@ import {
   Text,
   List,
   ListItem
-} from 'spectacle';
-import createTheme from 'spectacle/lib/themes/default';
-require('normalize.css');
+} from "spectacle";
+import createTheme from "spectacle/lib/themes/default";
+require("normalize.css");
 
 const images = {
-  differentTypesOfDisabilities: require('../assets/limitations.png')
+  differentTypesOfDisabilities: require("../assets/limitations.png")
 };
 
 // not feeling these colors
 const theme = createTheme(
   {
-    primary: '#553c8b',
-    secondary: '#9ea9f0',
-    tertiary: '#ccc1ff',
-    quaternary: '#ffeafe'
+    primary: "#ffeafe",
+    secondary: "#9ea9f0",
+    tertiary: "#ccc1ff",
+    quaternary: "#553c8b"
   },
   {
-    primary: 'Operator Mono Lig', // This font is a little distracting
-    secondary: 'Helvetica'
+    primary: "Operator Mono Lig", // This font is a little distracting
+    secondary: "Helvetica"
   }
 );
 
 const Presentation = () => (
-  <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
-    <Slide transition={['zoom']} bgColor="primary">
+  <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+    <Slide transition={["zoom"]} bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         Accessibility 101
       </Heading>
     </Slide>
-    <Slide transition={['zoom']} bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+    <Slide transition={["zoom"]} bgColor="secondary">
+      <Heading size={1} fit caps lineHeight={1} textColor="primary">
         What is an impairment?
       </Heading>
-      <Text>
+      <Text textColor="primary">
         We all have abilities. And we all have limitations to our abilities. An
         impairment is a limitation that could make it harder for you to do
         something.
       </Text>
     </Slide>
-    <Slide>
-      <Text>
+    <Slide transition={["zoom"]} textColor="tertiary">
+      <Text textColor="secondary">
         The Web is an increasingly important resource in many aspects of life:
         education, employment, government, commerce, health care, recreation,
         and more. It is essential that the Web be accessible in order to provide
         equal access and equal opportunity to people with diverse abilities
       </Text>
     </Slide>
-    <Slide transition={['zoom']} bgColor="secondary" textColor="primary">
+    <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
       <BlockQuote>
         <Quote>
           In the context of health experience, a disability is any restriction
@@ -69,7 +69,7 @@ const Presentation = () => (
         <Cite margin="10px 0 0 30px">World Health Organization</Cite>
       </BlockQuote>
     </Slide>
-    <Slide transition={['zoom']} bgColor="secondary" textColor="primary">
+    <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
       <BlockQuote>
         <Quote>
           Disability is not just a health problem. It is a complex phenomenon,
@@ -119,15 +119,18 @@ const Presentation = () => (
       </List>
     </Slide>
 
-    <Slide transition={['zoom']} bgColor="primary">
+    <Slide transition={["zoom"]} bgColor="primary">
       <Image src={images.differentTypesOfDisabilities} />
     </Slide>
     <Slide>
-      <Heading>How does it help?</Heading>
-      <Text>Example: Captions</Text>
-      <Text>Captions can accomodate those who cannot hear at all, as well as those in a quiet or loud place.</Text>
+      <Heading textColor="quaternary">How does it help?</Heading>
+      <Text textColor="tertiary">Example: Captions</Text>
+      <Text textColor="tertiary">
+        Captions can accomodate those who cannot hear at all, as well as those
+        in a quiet or loud place.
+      </Text>
     </Slide>
-    <Slide transition={['zoom']} bgColor="primary">
+    <Slide transition={["zoom"]} bgColor="primary">
       <iframe
         width="560"
         height="315"
@@ -147,7 +150,7 @@ const Presentation = () => (
       </Text>
       <Link href="https://www.w3.org/WAI/">https://www.w3.org/WAI/</Link>
     </Slide>
-    <Slide transition={['zoom']} bgColor="primary">
+    <Slide transition={["zoom"]} bgColor="primary">
       <Heading>What can you do?</Heading>
       <List>
         <ListItem>Go to w3.org/WAI and watch videos</ListItem>
