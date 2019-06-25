@@ -73,18 +73,18 @@ const Presentation = () => (
     </Slide>
     <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
       <BlockQuote>
-        <Quote>
+        <Quote textSize={"3rem"}>
           In the context of health experience, a disability is any restriction
           or lack of ability (resulting from an impairment) to perform an
           activity in the manner or within the range considered normal for a
           human being.
         </Quote>
-        <Cite margin="10px 0 0 30px">World Health Organization</Cite>
+        <Cite>World Health Organization</Cite>
       </BlockQuote>
     </Slide>
     <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
       <BlockQuote>
-        <Quote>
+        <Quote textSize={"3rem"}>
           Disability is not just a health problem. It is a complex phenomenon,
           reflecting the interaction between features of a person’s body and
           features of the society in which he or she lives.
@@ -185,6 +185,42 @@ const Presentation = () => (
     </Slide>
     <Slide>
       <Heading>What kind of benefits?</Heading>
+    </Slide>
+    <Slide>
+      <Heading>Innovation</Heading>
+      <List>
+        <ListItem textSize={"2rem"}>
+          Accessibility is closely related to general usability – both aim to
+          define and deliver a more intuitive user experience.
+        </ListItem>
+        <ListItem textSize={"2rem"}>
+          Innovations like the typewriter, telephone, punch cards, text to
+          speech, email, and voice controls were initially meant to include
+          those with a disability, and all have found a much broader
+          application.
+        </ListItem>
+        <ListItem textSize={"2rem"}>
+          Driverless cars, so promising for the independence of blind people,
+          are projected to also help solve traffic fatalities and congestion.
+        </ListItem>
+        <ListItem textSize={"2rem"}>
+          Research and development of the artificial retina project to help
+          restore sight for participants who are blind may also help future
+          robots with real-time image-processing systems, effectively enabling
+          them to “see.”
+        </ListItem>
+      </List>
+    </Slide>
+    <Slide>
+      <Heading>What other benefits?</Heading>
+      <List>
+        <ListItem textSize={"2rem"}>Enhances brand + reputation.</ListItem>
+        <ListItem textSize={"2rem"}>Minimizes legal risk</ListItem>
+        <ListItem textSize={"2rem"}>
+          Increases market reach (At least one billion people – 15% of the
+          world’s population – have a recognized disability)
+        </ListItem>
+      </List>
     </Slide>
     <Slide>
       <Heading>Questions?</Heading>
