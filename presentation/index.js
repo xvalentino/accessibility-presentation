@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Appear,
   Link,
   BlockQuote,
   Quote,
@@ -16,29 +17,41 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 
 const images = {
-  differentTypesOfDisabilities: require("../assets/limitations.png")
+  differentTypesOfDisabilities: require("../assets/limitations.png"),
+  lawSuitStats: require("../assets/lawSuitStats.png")
 };
 
 // not feeling these colors
+//
 const theme = createTheme(
   {
-    primary: "#ffeafe",
-    secondary: "#9ea9f0",
-    tertiary: "#ccc1ff",
-    quaternary: "#553c8b"
+    primary: "white",
+    secondary: "#1F2022",
+    tertiary: "#03A9FC",
+    quarternary: "#CECECE"
   },
   {
-    primary: "Operator Mono Lig", // This font is a little distracting
-    secondary: "Helvetica"
+    primary: "Montserrat",
+    secondary: "Helvetica",
+    tertiary: "Dank Mono"
   }
 );
+theme.screen.components.quote.lineHeight = 1.3;
+theme.screen.components.text.lineHeight = 1.3;
 
 const Presentation = () => (
   <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
     <Slide transition={["zoom"]} bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        Accessibility 101
+        Web Accessibility 101
       </Heading>
+    </Slide>
+    <Slide>
+      <Heading>What is Accessibility?</Heading>
+      <Text>
+        addresses discriminatory aspects related to equivalent user experience
+        for people with disabilities
+      </Text>
     </Slide>
     <Slide transition={["zoom"]} bgColor="secondary">
       <Heading size={1} fit caps lineHeight={1} textColor="primary">
@@ -81,7 +94,7 @@ const Presentation = () => (
     </Slide>
     <Slide>
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        What is Accessibility?
+        What is web accessibility?
       </Heading>
       <Text margin="10px 0 0" textColor="tertiary" fit bold>
         On the web, people with disabilities can:
@@ -93,6 +106,9 @@ const Presentation = () => (
         <ListItem>interact</ListItem>
         <ListItem>contribute</ListItem>
       </List>
+    </Slide>
+    <Slide transition={["zoom"]} bgColor="primary">
+      <Image src={images.differentTypesOfDisabilities} />
     </Slide>
     <Slide>
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -114,13 +130,9 @@ const Presentation = () => (
         </ListItem>
         <ListItem>
           people using a slow Internet connection, or who have limited or
-          expensive bandwidth j
+          expensive bandwidth
         </ListItem>
       </List>
-    </Slide>
-
-    <Slide transition={["zoom"]} bgColor="primary">
-      <Image src={images.differentTypesOfDisabilities} />
     </Slide>
     <Slide>
       <Heading textColor="quaternary">How does it help?</Heading>
@@ -160,6 +172,21 @@ const Presentation = () => (
       </List>
     </Slide>
     <Slide>
+      <Heading>State of web a11y</Heading>
+    </Slide>
+    <Slide>
+      <Heading>Legal</Heading>
+      <Image src={images.lawSuitStats} />
+      <Text>
+        Lawsuit cases around web a11y went up 181% from 2017 - 2018. There are
+        tons of statistics out there showing a11y users are increasing rapidly
+        and so are legal cases.
+      </Text>
+    </Slide>
+    <Slide>
+      <Heading>What kind of benefits?</Heading>
+    </Slide>
+    <Slide>
       <Heading>Questions?</Heading>
     </Slide>
     <Slide>
@@ -175,7 +202,6 @@ const Presentation = () => (
         </ListItem>
       </List>
     </Slide>
-    {/* - Accessibility can enhance your brand, drive innovation, and extend your market reach.  Web accessibility is required by law in many situations. */}
   </Deck>
 );
 export default Presentation;
