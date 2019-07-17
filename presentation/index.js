@@ -223,6 +223,23 @@ const Presentation = () => (
       </List>
     </Slide>
     <Slide>
+      <Heading>Why is a11y important to Handshake?</Heading>
+      <Text>
+        In order to democratize opportunity for all students, we must focus on
+        disabled users first - otherwise only users without disabilities will
+        benefit.
+      </Text>
+    </Slide>
+    <Slide>
+      <Heading textColor="tertiary" size={3}>
+        What processes does building an accessible website effect?
+      </Heading>
+      <Text>
+        All of them. We all benefit from considering what an accessible
+        experience with our product is like.
+      </Text>
+    </Slide>
+    <Slide>
       <Heading>Questions?</Heading>
     </Slide>
     <Slide>
